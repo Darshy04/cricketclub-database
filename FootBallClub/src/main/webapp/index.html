@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>CRICKET Club</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #1c1c1c;
+        
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        color: #f0f0f0;
+        margin: 0;
+        padding: 0;
+    }
+    header {
+        background-color: #222;
+        padding: 20px;
+        text-align: center;
+    }
+    header h1 {
+        margin: 0;
+        font-size: 2.5em;
+    }
+    nav {
+        background-color: #444;
+        overflow: hidden;
+        text-align: center;
+    }
+    nav a {
+        display: inline-block;
+        color: #f0f0f0;
+        text-align: center;
+        padding: 14px 20px;
+        text-decoration: none;
+        font-size: 1.1em;
+    }
+    nav a:hover {
+        background-color: #575757;
+        color: #fff;
+    }
+    main {
+        padding: 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    .content {
+        background-color: #333;
+        padding: 20px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+    .content h2 {
+        margin-top: 0;
+    }
+    footer {
+        background-color: #222;
+        color: #f0f0f0;
+        text-align: center;
+        padding: 10px 0;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+    }
+    a {
+        color: #00bfff;
+        text-decoration: none;
+    }
+    a:hover {
+        color: #00ffff;
+    }
+    .player-list, .match-schedule, .gallery, .contact-form {
+        margin-bottom: 20px;
+    }
+    .responsive {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        margin: 10px 0;
+    }
+    form input, form textarea {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border-radius: 5px;
+        border: none;
+        box-sizing: border-box;
+    }
+    form input[type="submit"] {
+        background-color: #00bfff;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        font-size: 1em;
+    }
+    form input[type="submit"]:hover {
+        background-color: #00ffff;
+    }
+    @media only screen and (max-width: 600px) {
+        nav a {
+            display: block;
+            text-align: center;
+            padding: 10px;
+        }
+        form input, form textarea {
+            font-size: 1em;
+        }
+    }
+</style>
+</head>
+<body>
+<header>
+    <h1>CRICKET CLUB</h1>
+</header>
+<nav>
+    <a href="#home">Home</a>
+    <a href="#add-player">Add Player</a>
+    <a href="#add-match">Add Match</a>
+    <a href="#upcoming-matches">Upcoming Matches</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+</nav>
+<main>
+    <div class="content" id="home">
+        <h2>Home</h2>
+        <p>Welcome to the VSB Football Club official website. Explore our latest matches, player details, and gallery. Stay tuned for upcoming events and matches.</p>
+        <div>
+            <a href="AddPlayerServlet">Add Player</a> | 
+            <a href="AddMatchForm">Add Match Details</a> | 
+            <a href="MatchInfo">Upcoming Match Details</a>
+        </div>
+    </div>
+
+    <div class="content player-list" id="add-player">
+        <h2>Player List</h2>
+        <ul>
+            <li>Player 1</li>
+            <li>Player 2</li>
+            <li>Player 3</li>
+        </ul>
+    </div>
+
+    <div class="content match-schedule" id="upcoming-matches">
+        <h2>Upcoming Matches</h2>
+        <ul>
+            <li>Match 1: Date & Time</li>
+            <li>Match 2: Date & Time</li>
+            <li>Match 3: Date & Time</li>
+        </ul>
+    </div>
+
+    <div class="content gallery" id="gallery">
+        <h2>Gallery</h2>
+        <img src="image1.jpg" alt="Image 1" class="responsive">
+        <img src="image2.jpg" alt="Image 2" class="responsive">
+        <img src="image3.jpg" alt="Image 3" class="responsive">
+    </div>
+
+    <div class="content contact-form" id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</main>
+<footer>
+    <p>&copy; 2024 Football League</p>
+</footer>
+</body>
+</html>
